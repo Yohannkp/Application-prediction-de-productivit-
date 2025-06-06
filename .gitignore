@@ -1,0 +1,89 @@
+# Flutter/Dart/Python/VSCode/OS ignores
+# --- FLUTTER ---
+**/build/
+**/.dart_tool/
+**/.packages
+**/pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.flutter-*
+
+# --- ANDROID ---
+**/android/.gradle/
+**/android/app/build/
+**/android/local.properties
+**/android/.idea/
+**/android/.settings/
+**/android/.externalNativeBuild/
+**/android/captures/
+**/android/.DS_Store
+
+# --- IOS ---
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/App.framework
+**/ios/Flutter/engine/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+**/ios/Runner.xcworkspace/
+**/ios/Runner.xcodeproj/project.xcworkspace/
+**/ios/Runner.xcodeproj/xcuserdata/
+**/ios/Runner.xcworkspace/xcuserdata/
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner/Assets.xcassets/
+**/ios/Runner/Base.lproj/
+**/ios/RunnerTests/
+**/ios/.DS_Store
+
+# --- MACOS ---
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Pods/
+**/macos/Runner.xcworkspace/
+**/macos/Runner.xcodeproj/project.xcworkspace/
+**/macos/Runner.xcodeproj/xcuserdata/
+**/macos/Runner.xcworkspace/xcuserdata/
+**/macos/RunnerTests/
+**/macos/.DS_Store
+
+# --- WINDOWS ---
+**/windows/runner/Debug/
+**/windows/runner/Release/
+**/windows/runner/x64/
+**/windows/runner/x86/
+**/windows/flutter/ephemeral/
+**/windows/.DS_Store
+
+# --- LINUX ---
+**/linux/flutter/ephemeral/
+**/linux/.DS_Store
+
+# --- WEB ---
+**/web/.DS_Store
+
+# --- PYTHON/ML ---
+**/__pycache__/
+**/*.pyc
+**/.ipynb_checkpoints/
+**/ML/Model/
+**/ML/notebooks/.ipynb_checkpoints/
+
+# --- VSCODE ---
+.vscode/
+
+# --- SYSTEM ---
+.DS_Store
+Thumbs.db
+
+# --- LOGS ---
+*.log
+
+# --- ENV ---
+.env
+.env.*
