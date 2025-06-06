@@ -56,3 +56,8 @@ def predict_productivity(data: PredictionRequest):
 @app.get("/")
 def root():
     return {"message": "API de prédiction de productivité (XGBoost top 10 vars) opérationnelle."}
+
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))  # Railway définit dynamiquement le port
+    uvicorn.run(app, host="", port=port)
