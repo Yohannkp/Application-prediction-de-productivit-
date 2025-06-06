@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
       });
     } catch (e) {
       setState(() {
-        _error = 'Erreur lors de l’analyse de la productivité.';
+        _error = e.toString();
       });
     } finally {
       setState(() {

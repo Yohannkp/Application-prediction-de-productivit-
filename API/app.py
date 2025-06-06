@@ -5,6 +5,7 @@ import pickle
 import os
 import pandas as pd
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 # Charger le modèle XGBoost entraîné (top 10 vars)
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'model/xgb_top10.pkl')
@@ -26,6 +27,17 @@ TOP10_VARS = [
 ]
 
 app = FastAPI(title="API de Prédiction de Productivité (XGBoost)")
+
+
+# Ajouter le middleware CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permet toutes les origines (ou tu peux spécifier des domaines spécifiques)
+    allow_credentials=True,
+    allow_methods=["*"],  # Permet toutes les méthodes (GET, POST, OPTIONS)
+    allow_headers=["*"],  # Permet tous les headers
+)
+
 
 class PredictionRequest(BaseModel):
     targeted_productivity: float
