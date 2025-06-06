@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 import os
 import pandas as pd
+import uvicorn
 
 # Charger le modèle XGBoost entraîné (top 10 vars)
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'model/xgb_top10.pkl')
